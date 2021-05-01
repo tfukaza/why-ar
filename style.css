@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300|Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+@import url('https://fonts.googleapis.com/css?family=Megrim');
+/*Universal*/
+
+body {
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-family: 'Megrim', cursive;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+
+/*Desktop*/
+
+@media screen and (min-width:1256px) {
+    h1 {
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: 100;
+        color: rgb(255, 255, 255);
+        margin: 40px;
+    }
+    h2 {
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 100;
+        color: rgb(255, 255, 255);
+        margin: 30px;
+    }
+    h3 {
+        letter-spacing: 7px;
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 100;
+        color: rgb(255, 255, 255);
+        margin: 30px;
+    }
+    h4 {}
+    h5 {}
+    h6 {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+
+      font-size: 15px;
+      font-weight: 100;
+      color: rgb(255, 255, 255);
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+    }
+    p {
+        font-size: 16px;
+        line-height: 250%;
+        font-weight: 100;
+        color: rgb(255, 255, 255);
+    }
+    #front {
+        width: 100%;
+        height:100vh;
+    }
+    #front-movie {
+
+        z-index: 0;
+
+    }
+    #index-pane {
+        width: 50px;
+        position: fixed;
+        top: 50%;
+        left: 50px;
+          transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    #logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+    .index-button {
+        width: 46px;
+        height: 46px;
+        border-radius:50%;
+        border: rgb(102, 102, 102) 2px solid;
+        background-color: rgba(255, 255, 255, 1);
+        cursor:pointer;
+    }
+    .index-dot {
+        border-radius:50%;
+        width: 4px;
+        height: 4px;
+        margin: 23px 23px;
+        background-color: #3c3c3c;
+    }
+    #index-here {
+        position: absolute;
+        top: 0px;
+        width: 20px;
+        height: 20px;
+        margin: 15px 15px;
+        background-color: #f63c14;
+    }
+    .section {
+        width: 100%;
+        background-color: rgb(30, 30, 30);
+        position: relative;
+        overflow: hidden;
+        height:1000px;
+    }
+    #rec-sec, #warn-sec, #future-sec{
+        height:800px;
+    }
+    .textbox {
+        padding: 30px;
+          width: 30%;
+
+    }
+    #button-container{
+      position: absolute;
+      top:70%;
+      left:50%;
+      transform: translate(-50%,-51%);
+     z-index: 5;
+    }
+    .button{
+      cursor: pointer;
+      height:50px;
+    display: inline-block;
+      position: relative;
+      margin:0px 50px;
+    }
+    .button #b-path {
+        stroke-dashoffset: 230px;
+stroke-dasharray: 230px;
+        transition: stroke-dashoffset 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+    .button #fill-path {
+        fill-opacity: 0;
+        transition: fill-opacity 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+    .button:hover #b-path {
+        stroke-dashoffset: 0px;
+    }
+    .button:hover  #fill-path {
+        fill-opacity:1;
+    }
+    #what-phone {
+        position: absolute;
+        right:100%;
+        top:100px;
+    }
+    #what-text{
+
+      position: absolute;
+      right:10%;
+      top:100px;
+    }
+    #what-paper{
+      position: absolute;
+      right:calc(60% - 100px);
+      top:100px;
+
+    }
+    #what-paper path{
+      setDashoffset:0px;
+    }
+
+
+    #edu-pane {
+        position: absolute;
+        right:-10%;
+       top:0px;
+
+    }
+    .vhspart{
+      transform: translateX(0px) translateY(0px);
+    }
+    #ed-text{
+
+
+            position: absolute;
+            left:10%;
+            top:100px;
+    }
+   .svg_container{
+      position:absolute;
+      bottom:-100px;
+      left:50%;
+      transform: translateX(-50%);
+
+   }
+   #rec-text{
+
+
+           position: absolute;
+           left:50%;
+           transform: translateX(-50%);
+           top:10px;
+   }
+   #rec-text p, #rec-text h2{
+       color:#2f2f2f;
+   }
+   #warnSVG{
+     position: absolute;
+     top:10%;
+     left:50%;
+     transform: translateX(-50%);
+   }
+   #warn-text{
+     position: absolute;
+     top:10%;
+     right:40%;
+     transform: translateX(-50%);
+   }
+   #future-text{
+
+     position: absolute;
+     top:10%;
+     left:50%;
+     transform: translateX(-50%);
+   }
+   #future-text h2, #future-text p{
+     color:#2b2b2b;
+
+   }
+   #market-phone{
+      width:300px;
+      overflow-x: hidden;
+      position: absolute;
+      top:200px;
+      right:10%;
+   }
+   #m-main{
+
+   }
+
+   #choose-pane{
+     width:350px;
+     position: absolute;
+     top:100px;
+     left:40%;
+     z-index: 10;
+       transform: translateX(-50%);
+       cursor:pointer;
+   }
+   .choose-button{
+     width:50px;
+     height:50px;
+     margin: 0px 25px;
+     border-radius: 50%;
+     background-color: rgb(29, 29, 29);
+
+     display: inline-block;
+     cursor:pointer;
+     transition:  background-color 0.2s;
+   }
+   .choose-button:hover{
+
+      background-color: rgb(91, 91, 91);
+
+   }
+  .zero  #zero{
+      background-color: rgb(235, 77, 49);
+  }
+  .one  #one{
+      background-color: rgb(235, 77, 49);
+  }
+  .two  #two{
+      background-color: rgb(235, 77, 49);
+  }
+  .hair{
+    animation: colorChange 5s infinite alternate linear;
+  }
+  @keyframes colorChange {
+    0%{
+      fill:#ff2494;
+    }
+    50%{
+      fill:#24ff61;
+    }
+    100%{
+      fill:#24fff2;
+    }
+  }
+
+   #text-market{
+     width:40%;
+    position: absolute;
+     height:500px;
+     left:40%;
+     top:300px;
+     transform: translateX(-50%);
+   }
+.text-inset{
+  width:100%;
+  position: absolute;
+  top:0px;
+}
+#market-pane{
+  transition: background-color 0.2s;
+}
+.zero{
+    background-color: #e6e6e6;
+
+}
+.one{
+    background-color:#a7e428;
+}
+.two{
+    background-color: #bde6ed;
+}
+
+
+
+
+.footer{
+  height:300px;
+  background-color:rgb(251, 251, 251);
+}
+}
+
+/*Tablet*/
+
+@media screen and (max-width:1255px) {
+    h1 {
+        letter-spacing: 7px;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 100;
+        color: rgb(255, 255, 255);
+        margin: 20px;
+        padding: 20px;
+    }
+    h2 {
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 100;
+        color: rgb(255, 255, 255);
+        margin: 10px;
+    }
+    h3 {
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 100;
+        color: rgb(255, 255, 255);
+        margin: 10px;
+    }
+    h4 {}
+    h5 {}
+    h6 {}
+    p {
+        font-size: 12pt;
+        line-height: 200%;
+        font-weight: 100;
+        color: rgb(255, 255, 255);
+    }
+    #front {
+        width: 100%;
+    }
+    #front-movie {
+      width: 100%;
+    }
+    #index-pane {
+      display:none;
+    }
+    #logo {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+    .index-button {
+        width: 46px;
+        height: 46px;
+        border-radius:50%;
+        border: rgb(102, 102, 102) 2px solid;
+        background-color: rgba(255, 255, 255, 1);
+        cursor:pointer;
+    }
+
+    .section {
+        width: 100%;
+        background-color: rgb(30, 30, 30);
+        position: relative;
+
+    }
+    .textbox {
+        padding: 5px;
+        width: 90%;
+        position:relative;
+        position:relative;
+        margin:0px auto;
+
+    }
+    .button{
+      position: absolute;
+      top:50%;
+      left:50%;
+      cursor: pointer;
+    }
+
+    .button #b-path {
+        stroke-dashoffset: 230px;
+         stroke-dasharray: 230px;
+        transition: stroke-dashoffset 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+    .button #fill-path {
+        fill-opacity: 0;
+        transition: fill-opacity 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+
+    #what-phone {
+      display: none;
+    }
+
+    #what-paper{
+    display: none;
+
+    }
+    #edu-pane {
+      display: none;
+
+    }
+
+   .svg_container{
+    display: none;
+
+   }
+   #rec-text p, #rec-text h2{
+       color:#2f2f2f;
+   }
+   #warnSVG{
+     display: none;
+   }
+
+
+   #future-text h2, #future-text p{
+     color:#2b2b2b;
+
+   }
+   #market-phone{
+     display:none;
+   }
+
+
+   #choose-pane{
+    display:none;
+   }
+
+
+
+
+.text-inset{
+  width:100%;
+}
+#market-pane{
+  display: none;
+}
+
+.footer{
+  height:300px;
+  background-color:rgb(251, 251, 251);
+}
+#note-index{
+  display: none;
+}
+}
+
+
+/*Mobile*/
+
+@media screen and (max-width:480px) {
+    h1 {
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 100;
+        color: rgb(255, 255, 255);
+        margin: 20px;
+    }
+    h2 {
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 100;
+        color: rgb(255, 255, 255);
+        margin: 10px;
+    }
+    h3 {
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 100;
+        color: rgb(255, 255, 255);
+        margin: 9px;
+    }
+    h4 {}
+    h5 {}
+    h6 {}
+    p {
+        font-size: 10pt;
+        line-height: 200%;
+        font-weight: 100;
+        color: rgb(255, 255, 255);
+    }
+    .text-container {
+        width: 95%;
+        margin: 20px auto;
+    }
+    .section {
+        width: 100%;
+        padding: 5px 0px;
+    }
+    .sub-section {
+        width: 95%;
+        padding: 1.5%;
+        margin: 5px auto;
+    }
+}
