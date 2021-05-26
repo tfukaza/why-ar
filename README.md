@@ -1,5 +1,7 @@
 # why-ar
-Website me and my team made in a high school web development competition. It is being hosted on GitHub pages for archive purposes.
+Website me and my team made back in high school for a web development competition. It is being hosted on GitHub pages for archive purposes.
+
+tfukaza.github.io/why-ar/
 
 Team members:
 - Tomoki Fukazawa (me)
