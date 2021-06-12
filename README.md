@@ -1,5 +1,5 @@
 # why-ar
-Website me and my team made back in high school for a web development competition. It is being hosted on GitHub pages for archive purposes.
+Website my team and I made back in high school for a web development competition. It is being hosted on GitHub pages for archive purposes.
 
 [Link to website](https://tfukaza.github.io/why-ar/)
 
